@@ -1,0 +1,29 @@
+/*Base Files Area Start*/
+@import url(./base/base.css);
+/*Base Files Area Start*/
+
+/*Layout Files Start*/
+@import url(./layout/header.css);
+@import url(./layout/footer.css);
+/*Layout Files End*/
+
+/*Responsive File Start*/
+@import url(./responsive/responsive.css);
+/*Responsive File Area Start*/
+
+/*Component Files Start*/
+@import url(./components/homeSlider.css);
+@import url(./components/about.css);
+@import url(./components/services.css);
+@import url(./components/blog.css);
+@import url(./components/video.css);
+@import url(./components/footerForm.css);
+/*Component Files End*/
+
+/*Buttons Component Start*/
+@import url(./components/aboutBtn.css);
+@import url(./components/exploreBtn.css);
+@import url(./components/footerButton.css);
+@import url(./components/backTop.css);
+/*Buttons Component End*/
+

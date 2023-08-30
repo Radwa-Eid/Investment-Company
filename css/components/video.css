@@ -1,0 +1,188 @@
+.video {
+  position: relative;
+  background-image: url(../../img/about/sq1.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.video::after {
+  position: absolute;
+  content: "";
+  background-color: #000000;
+  opacity: 0.8;
+  inset: 0;
+}
+.video .content-video .videoLink {
+  width: 92px;
+  height: 92px;
+  line-height: 92px;
+  display: inline-block;
+  font-size: 24px;
+  color: #fff;
+  background-color: #3ebdcd;
+  text-align: center;
+  position: relative;
+  transition: all 0.35s;
+  border-radius: 50%;
+  z-index: 1;
+}
+.video .content-video .videoLink::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #fff;
+  opacity: 0;
+  border-radius: 50%;
+  animation: videoBorder 1.4s linear infinite;
+}
+.video .content-video .videoLink::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #fff;
+  opacity: 0;
+  border-radius: 50%;
+  animation: videoBorder2 1.5s linear infinite;
+}
+@keyframes videoBorder {
+  Form {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+@keyframes videoBorder2 {
+  Form {
+    opacity: 0;
+    transform: scale(1.4);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1.4);
+  }
+}
+.video .content-video {
+  position: relative;
+  z-index: 1;
+}
+.video .content-video .videoHeading {
+  position: relative;
+  transition: all 0.3s;
+  transform: scale(1.1);
+  display: inline-block;
+}
+.video .content-video .videoHeading:hover {
+  transform: scale(1);
+}
+.video .content-video .videoHeading .videoArrow {
+  width: 70px;
+  height: 50px;
+  position: absolute;
+  top: 70%;
+  left: 80%;
+  margin-left: 22px;
+  margin-top: -18px;
+  transition: all 0.2s;
+  transform: scaleX(-1);
+}
+.video .content-video .videoHeading .videoArrow img {
+  transition: inherit;
+  transform: rotate(72deg);
+}
+.videoSubTitle span {
+  font-size: 18px;
+  padding: 9px 22px;
+  border-radius: 6px;
+  display: inline-block;
+  background-color: #ffffff85;
+  color: #fff;
+}
+.videoText {
+  color: #fff;
+}
+.videoCard {
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+  border: 1px solid #ffffff85;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.videoCard i {
+  font-size: 40px;
+  color: #3ebdcd;
+  transition: all 0.5s;
+  transform: scale(1.2);
+}
+.videoCard::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  width: 100%;
+  height: 0;
+  background-color: #ffffff85;
+  transition: all 0.5s;
+  opacity: 0;
+}
+.videoCard:hover::before {
+  opacity: 1;
+  height: 100%;
+}
+.videoCard:hover i {
+  color: #fff;
+  transform: scale(1);
+}
+
+#videoPlay {
+  position: absolute;
+  display: none;
+  overflow: hidden;
+  text-align: center;
+}
+.overlayVideo {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1042;
+  overflow: hidden;
+  position: fixed;
+  background: #11111188;
+}
+.videoContant {
+  max-width: 75%;
+  margin: 0 auto;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 1045;
+  text-align: center;
+}
+.videoContant span {
+  display: inline-block;
+  width: 2%;
+}
+iframe {
+  overflow: hidden;
+  width: 980px;
+  height: 500px;
+}
+.close {
+  color: #000;
+  right: -6px;
+  text-align: right;
+  padding-right: 6px;
+  width: 100%;
+}

@@ -1,0 +1,155 @@
+/*Home Slider Style Strat*/
+.homeSlider {
+  width: 100%;
+  height: 750px;
+  position: relative;
+  overflow: hidden;
+}
+.homeSlider .owl-carousel .owl-stage-outer {
+  height: 100%;
+  width: 100%;
+}
+
+.homeSlider .no-js .owl-carousel,
+.homeSlider .owl-carousel.owl-loaded {
+  height: 100%;
+  width: 100%;
+}
+
+.homeSlider .owl-carousel .owl-stage {
+  height: 100%;
+  width: 100%;
+}
+
+.homeSlider .owl-carousel.owl-drag .owl-item {
+  height: 100%;
+  width: 100%;
+}
+
+.item {
+  height: 100%;
+  width: 100%;
+}
+
+.homeSlider .owl-carousel .item .slider1 {
+  position: relative;
+  background-image: url(../../img/slider/slider1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.slider2 {
+  position: relative;
+  background-image: url(../../img/slider/slider2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.slider3 {
+  position: relative;
+  background-image: url(../../img/slider/slider3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.homeSlider .owl-carousel .item .overlay::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(26, 26, 26);
+  opacity: 0.7;
+}
+
+/*Slider Arrows*/
+.homeSlider .owl-carousel .owl-nav button.owl-next {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  font-size: 25px;
+  transition: all 0.5s ease 0s;
+}
+.homeSlider .owl-carousel .owl-nav button.owl-next:hover {
+  transform: scale(1.5);
+  color: #333333;
+  background-color: unset;
+}
+.homeSlider .owl-carousel .owl-nav button.owl-next:focus {
+  outline: none;
+}
+.homeSlider .owl-carousel .owl-nav button.owl-prev {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  font-size: 25px;
+  transition: all 0.5s ease 0s;
+}
+.homeSlider .owl-carousel .owl-nav button.owl-prev:hover {
+  transform: scale(1.5);
+  color: #333333;
+  background-color: unset;
+}
+.homeSlider .owl-carousel .owl-nav button.owl-prev:focus {
+  outline: none;
+}
+
+/* Captions Styling */
+.homeSlider .item .caption {
+  position: relative;
+  z-index: 1;
+}
+.homeSlider .item .caption .subTitle {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  transition: all 0.5s;
+  transition-delay: 0.1s;
+  transform: translateY(20px);
+  opacity: 0;
+}
+.homeSlider .item .caption .subTitle .arrow i {
+  width: 25px;
+  height: 25px;
+  margin-left: 8px;
+  transition: all 0.2s;
+  transform: rotate(45deg);
+}
+
+.homeSlider .owl-item.active .caption .subTitle {
+  transform: translateY(-20px);
+  opacity: 1;
+}
+.homeSlider .item .caption .titleHeading {
+  transition: all 0.8s;
+  transition-delay: 0.1s;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 60px;
+  transform: translateY(30px);
+  opacity: 0;
+}
+.homeSlider .owl-item.active .caption .titleHeading {
+  transform: translateY(-30px);
+  opacity: 1;
+}
+.homeSlider .item .caption .paragText {
+  transition: all 1s;
+  transition-delay: 0.1s;
+  transform: translateY(50px);
+  opacity: 0;
+}
+.homeSlider .owl-item.active .caption .paragText {
+  transform: translateY(-50px);
+  opacity: 1;
+}

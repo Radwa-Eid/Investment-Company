@@ -1,0 +1,129 @@
+.footer{
+    position: relative;
+    padding: 100px 0px;
+    background-color: #f4ede7;
+}
+.footerLogo{
+    width: 40%;
+}
+.footerMenuItem{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.footerMenuItem:hover a{
+    color: #000;
+}
+/*Footer Icon Style Start*/
+
+.footerIcon a{
+    position: relative;
+    line-height: 1.25;
+    display: block;
+    padding: 0 5px;
+    color: #333;
+    margin: 0 10px;
+}
+.productIcon i{
+    position: relative;
+    font-size: 18px;
+}
+.productIcon {
+    position: relative;
+    color: #fff;
+    width: 48px;
+    height: 48px;
+    margin: 0 5px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 1;
+    cursor: pointer; 
+}
+
+.productIcon i {
+    position: relative;
+    font-size: 18px;
+    line-height: 48px;
+    color: #f4ede7;
+}
+
+.productIcon{
+    position: relative;
+}
+
+.productIcon::before {
+    position: absolute;
+    content: "";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    visibility: hidden;
+    opacity: 0;
+    padding: 8px 10px;
+    transition: all .3s cubic-bezier(.65, .05, .36, 1) 0s;
+    white-space: nowrap;
+    box-shadow: 4px 4px 8px #0000004d;
+    text-shadow: 0 -1px 0 #000;
+    color: #fff;
+    background: #333;
+    bottom: calc(100% - 4px);
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.productIcon::after {
+    position: absolute;
+    content: "";
+    border: 6px solid transparent;
+    left: 50%;
+    transition: all .3s cubic-bezier(.65,.05,.36,1) 0s;
+    transform: translate(-50%);
+    border-top-color: #333;
+    bottom: calc(100% - 16px);
+    opacity: 0;
+    visibility: hidden;
+}
+.productIcon:hover::after {
+    bottom: calc(100% - 5px);
+    opacity: 1;
+    visibility: visible;
+}
+
+.productIcon:hover::before {
+    bottom: calc(100% + 6px);
+    visibility: visible;
+    opacity: 1;
+}
+#footerIcon1::before{
+    position: absolute;
+    content: "Twitter";
+}
+#footerIcon2::before{
+    position: absolute;
+    content: "Facebook";
+}
+
+#footerIcon3::before{
+    position: absolute;
+    content: "Instagram";
+}
+
+#footerIcon4::before{
+    position: absolute;
+    content: "Youtube";
+}
+/*Footer Icon Style End*/
+
+/*Footer Copy Right*/
+.copyRight{
+    font-size: 16px;
+    font-weight: 400;
+}
+.copyRight strong{
+    color: #333;
+}
+.copyRight a:hover{
+    color: #333;
+}

@@ -1,0 +1,55 @@
+.aboutBtn {
+  transition: all 500ms ease;
+  transition-delay: 2200ms;
+  transform: translateY(0);
+}
+.btnAnimation {
+  z-index: 1;
+  position: relative;
+  font-size: 20px;
+  display: inline-block;
+  margin-left: 10px;
+}
+.btnAnimation:hover{
+    color: #fff;
+}
+.btnAnimation::after {
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  content: "";
+  height: 61px;
+  width: 61px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  transition: all 0.35s ease-in-out;
+  transform: scale(1);
+  z-index: -1;
+}
+.btnAnimation span {
+  transition: all 0.35s ease-in-out;
+  left: -50px;
+  position: relative;
+}
+.btnAnimation:hover span {
+  left: 0;
+}
+.btnAnimation:hover {
+  margin-left: 0;
+}
+.btnAnimation i {
+  display: inline-block;
+  height: 57px;
+  width: 57px;
+  text-align: center;
+  line-height: 55px;
+  background: #fff;
+  color: #000;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: all 0.35s ease-in-out;
+  transform: scale(0);
+}
+.btnAnimation:hover i {
+  transform: scale(1);
+}

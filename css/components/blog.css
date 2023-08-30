@@ -1,0 +1,74 @@
+.blog{
+    background-color: #e0dede;
+}
+.blogBtn span{
+    font-size: 16px;
+}
+.blogBtn:hover span{
+    color: #3ebdcd;
+}
+.blogCart .contant h6{
+    font-size: 20px;
+    font-weight: 400;
+}
+.blogCart .contant h6 a:hover{
+    color: #3ebdcd;
+}
+.blogCart .contant .info{
+    font-size: 11px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-top: 1px solid #f1f3f5;
+}
+.blogCart .contant .info i{
+    font-size: 15px;
+    padding-right: 10px;
+}
+.blogImg{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.blogImg::after{
+    position: absolute;
+    content: "";
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f1f3f59f;
+    transition: all .4s;
+    border-radius: 10px;
+    opacity: 0;
+}
+.blogArrow{
+    display: block;
+}
+.blogArrow span{
+    height: 60px;
+    width: 60px;
+    background-color: #fff;
+    position: absolute;
+    top: 42%;
+    left: 42%;
+    text-align: center;
+    line-height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.blogArrow i{
+    font-size: 25px;
+    color: #3ebdcd;
+    transition: all 0.5s;
+    transform: rotate(45deg);
+}
+.blogImg:hover::after{
+    opacity: 1;
+}
+.blogImg:hover .blogArrow span{
+    transition: all 0.5s;
+    opacity: 1;
+}
